@@ -1,0 +1,35 @@
+appId: com.cafedeglacier.pos
+productName: Café de Glacier POS
+directories:
+  output: release
+  buildResources: build
+files:
+  - out/**/*
+  - package.json
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: build/icon.ico
+  signAndEditExecutable: false
+  verifyUpdateCodeSignature: false
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: always
+  createStartMenuShortcut: true
+  shortcutName: Café de Glacier POS
+mac:
+  target:
+    - target: dmg
+      arch:
+        - universal
+  category: public.app-category.business
+  icon: build/icon.icns
+  hardenedRuntime: false
+  gatekeeperAssess: false
+dmg:
+  title: Café de Glacier POS
+asar: true
