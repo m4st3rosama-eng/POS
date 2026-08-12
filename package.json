@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
     "postinstall": "electron-builder install-app-deps",
     "icon": "node scripts/generateIcon.mjs",
-    "dist": "npm run build && electron-builder --win nsis"
+    "dist": "npm run build && electron-builder --win nsis",
+    "build:mac-local": "npm run build && electron-builder --mac --dir"
   },
   "dependencies": {
     "react": "^18.3.1",
