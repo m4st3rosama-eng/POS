@@ -25,7 +25,8 @@ mac:
   target:
     - target: dmg
       arch:
-        - universal
+        - x64
+        - arm64
   category: public.app-category.business
   icon: build/icon.icns
   hardenedRuntime: false
