@@ -22,6 +22,7 @@ nsis:
   createStartMenuShortcut: true
   shortcutName: Café de Glacier POS
 mac:
+  identity: null
   target:
     - target: dmg
       arch:
